@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Your Name</title>
+  <meta name="description" content="Contact: enquire about a messaging + Squarespace website sprint." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">YOUR NAME <span class="badge">Contact</span></div>
+      <nav>
+        <a href="index.html" data-page="index.html">Home</a>
+        <a href="services.html" data-page="services.html">Services</a>
+        <a href="work.html" data-page="work.html">Work</a>
+        <a href="about.html" data-page="about.html">About</a>
+        <a href="contact.html" data-page="contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <section class="hero">
+      <h1>Let’s make your site clearer + more converting. 📩</h1>
+      <p class="subhead">
+        Fill this out and it’ll open an email draft with everything I need. If it feels like a fit, we book a 20-min call.
+      </p>
+    </section>
+
+    <div class="grid">
+      <div class="card">
+        <form id="contactForm">
+          <div class="formRow">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" required placeholder="Your name" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="you@company.com" />
+            </div>
+          </div>
+
+          <div class="formRow" style="margin-top:12px;">
+            <div>
+              <label for="business">Business</label>
+              <input id="business" name="business" placeholder="Business name + website (if any)" />
+            </div>
+            <div>
+              <label for="goal">Primary goal</label>
+              <select id="goal" name="goal" required>
+                <option value="" selected disabled>Select one</option>
+                <option>New website (Squarespace)</option>
+                <option>Rewrite + restructure existing site</option>
+                <option>Messaging clarity (offer + copy)</option>
+                <option>Outbound starter kit</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="margin-top:12px;">
+            <label for="message">What are you selling, and what’s not working right now?</label>
+            <textarea id="message" name="message" required placeholder="Briefly describe your service, your customers, and what you want more of."></textarea>
+          </div>
+
+          <div class="ctaRow" style="margin-top:14px;">
+            <button class="btn primary" type="submit">Send enquiry (opens email)</button>
+            <a class="btn ghost" href="mailto:YOUR@email.com?subject=Website%20Sprint%20Enquiry">Email directly</a>
+          </div>
+
+          <p class="note">
+            Heads up: this form uses your email app (mailto) so it works on GitHub Pages without a backend.
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>© <span id="year"></span> YOUR NAME</div>
+      <div><a href="privacy.html">Privacy</a></div>
+    </div>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
